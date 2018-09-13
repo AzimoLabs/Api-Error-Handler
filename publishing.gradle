@@ -57,8 +57,8 @@ publishing {
         maven {
             name = project.hasProperty('MAVEN_USER') ? project.getProperty('MAVEN_USER') : ""
 
-            url project.hasProperty('MAVEN_URL') ? project.getProperty("MAVEN_URL") : "" +
-                    project.version.endsWith('-SNAPSHOT') ? '-snapshots' : '-releases'
+            url = (project.hasProperty('MAVEN_URL') ? project.getProperty("MAVEN_URL") : "") +
+                    (project.version.endsWith('-SNAPSHOT') ? '-snapshots' : '-releases')
         }
     }
 }
