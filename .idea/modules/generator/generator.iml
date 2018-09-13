@@ -53,6 +53,7 @@
     <orderEntry type="module" module-name="api" exported="" />
     <orderEntry type="module" module-name="api" exported="" />
     <orderEntry type="module" module-name="api" exported="" />
+    <orderEntry type="module" module-name="api" exported="" />
     <orderEntry type="library" exported="" name="Gradle: groovy-all-2.4.15" level="project" />
     <orderEntry type="library" exported="" name="Gradle: auto-service-1.0-rc4" level="project" />
     <orderEntry type="library" exported="" name="Gradle: javapoet-1.9.0" level="project" />

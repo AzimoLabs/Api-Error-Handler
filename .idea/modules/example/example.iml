@@ -60,6 +60,7 @@
     <orderEntry type="module" module-name="api" exported="" />
     <orderEntry type="module" module-name="api" exported="" />
     <orderEntry type="module" module-name="api" exported="" />
+    <orderEntry type="module" module-name="api" exported="" />
     <orderEntry type="module" module-name="generator" exported="" />
     <orderEntry type="library" exported="" name="Gradle: javax.inject-1" level="project" />
     <orderEntry type="library" exported="" scope="PROVIDED" name="Gradle: groovy-all-2.4.15" level="project" />
