@@ -94,11 +94,11 @@ This will generate implementation calling matching methods when specified error 
 // TODO: add to your project
 
 ## Example usages
-* [SimplerErrorListener - basic example, error codes without messages](example/src/main/java/com.azimolabs/errorhandler/example/SimplerErrorListener.java)
-* [FieldsErrorListener - basic example, error codes without messages](example/src/main/java/com.azimolabs/errorhandler/example/FieldsErrorListener.java)
-* [ErrorEnabledView - you can use generic interface, additional, non-annotated methods are also available](example/src/main/java/com.azimolabs/errorhandler/example/ErrorEnabledView.java)
-* [DynamicErrorListener - collapse error messages and pass it to dynamic form, with unspecified number of fields](example/src/main/java/com.azimolabs/errorhandler/example/DynamicErrorListener.java)
-* [DelegatingErrorListener - specify which case requires custom logic](example/src/main/java/com.azimolabs/errorhandler/example/DelegatingErrorListener.java)
-* [DelegatedErrorListener - custom handling, write logic for exceptional flow only](example/src/main/java/com.azimolabs/errorhandler/example/DelegatedErrorListener.java)
+* [SimplerErrorListener - basic example, error codes without messages](example/src/main/java/com/azimolabs/errorhandler/example/SimplerErrorListener.java)
+* [FieldsErrorListener - basic example, error codes without messages](example/src/main/java/com/azimolabs/errorhandler/example/FieldsErrorListener.java)
+* [ErrorEnabledView - you can use generic interface, additional, non-annotated methods are also available](example/src/main/java/com/azimolabs/errorhandler/example/ErrorEnabledView.java)
+* [DynamicErrorListener - collapse error messages and pass it to dynamic form, with unspecified number of fields](example/src/main/java/com/azimolabs/errorhandler/example/DynamicErrorListener.java)
+* [DelegatingErrorListener - specify which case requires custom logic](example/src/main/java/com/azimolabs/errorhandler/example/DelegatingErrorListener.java)
+* [DelegatedErrorListener - custom handling, write logic for exceptional flow only](example/src/main/java/com/azimolabs/errorhandler/example/DelegatedErrorListener.java)
 
 
