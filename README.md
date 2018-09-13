@@ -5,6 +5,7 @@ Declarative error handling. Define expected behaviour of API and don't worry abo
 ## Usage
 Specify interface with methods that you want called for different API error codes.
 
+```java
     @AutoHandler // let compiler know to analyse your class
     public interface SimplerErrorListener { // your code has to implement this interface
 
@@ -15,9 +16,11 @@ Specify interface with methods that you want called for different API error code
         void multiple();
 
     }
+```
     
 This will generate implementation calling matching methods when specified error codes are encountered:
 
+```java
     @Generated("com.azimolabs.errorhandler")
     public class SimplerErrorListenerHandler implements ErrorHandler {
       private final ErrorLogger errorLogger;
@@ -56,11 +59,12 @@ This will generate implementation calling matching methods when specified error 
         }
       }
     }
+```
 
 ### Advanced features: 
 * payload fields to give meaningful error messages to the user, 
 
-
+```json
       {
         "error": "422",
         "errors": {
@@ -68,9 +72,10 @@ This will generate implementation calling matching methods when specified error 
         }
       }    
       
+```
 * nested fields: 
 
-
+```json
       {
         "error": "422",
         "errors": {
@@ -79,6 +84,7 @@ This will generate implementation calling matching methods when specified error 
           }
         }
       }    
+```
   
 * report error to your bug tracking backend with one annotation,
 * collapse field messages and pass to UI when form config is dynamic,
