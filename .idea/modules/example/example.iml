@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module external.linked.project.id=":example" external.linked.project.path="$MODULE_DIR$/../../../example" external.root.project.path="$MODULE_DIR$/../../.." external.system.id="GRADLE" external.system.module.group="com.azimolabs" external.system.module.version="0.1.0" type="JAVA_MODULE" version="4">
+  <component name="FacetManager">
+    <facet type="android-gradle" name="Android-Gradle">
+      <configuration>
+        <option name="GRADLE_PROJECT_PATH" value=":example" />
+      </configuration>
+    </facet>
+    <facet type="java-gradle" name="Java-Gradle">
+      <configuration>
+        <option name="BUILD_FOLDER_PATH" value="$MODULE_DIR$/../../../example/build" />
+        <option name="BUILDABLE" value="true" />
+      </configuration>
+    </facet>
+  </component>
+  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_8">
+    <output url="file://$MODULE_DIR$/../../../example/build/classes/java/main" />
+    <output-test url="file://$MODULE_DIR$/../../../example/build/classes/java/test" />
+    <exclude-output />
+    <content url="file://$MODULE_DIR$/../../../example">
+      <sourceFolder url="file://$MODULE_DIR$/../../../example/src/main/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../example/build/generated/source/apt/main" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../example/src/main/resources" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../example/src/test/java" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../example/build/generated/source/apt/test" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../example/src/test/resources" type="java-test-resource" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../example/.gradle" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../example/build/classes" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../example/build/jacoco" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../example/build/libs" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../example/build/publications" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../example/build/reports" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../example/build/test-results" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../example/build/tmp" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module" module-name="api" />
+    <orderEntry type="module" module-name="generator" scope="PROVIDED" />
+    <orderEntry type="library" name="Gradle: javax.inject:javax.inject:1" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: org.codehaus.groovy:groovy-all:2.4.15" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: com.google.auto.service:auto-service:1.0-rc4" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: com.squareup:javapoet:1.9.0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: com.google.auto:auto-common:0.8" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: com.google.guava:guava:23.5-jre" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: com.google.code.findbugs:jsr305:1.3.9" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: org.checkerframework:checker-qual:2.0.0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: com.google.errorprone:error_prone_annotations:2.0.18" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: com.google.j2objc:j2objc-annotations:1.1" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: org.codehaus.mojo:animal-sniffer-annotations:1.14" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: junit:junit:4.12" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.mockito:mockito-core:2.22.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.google.guava:guava:24.0-android" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.hamcrest:hamcrest-core:1.3" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: net.bytebuddy:byte-buddy:1.8.21" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: net.bytebuddy:byte-buddy-agent:1.8.21" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.objenesis:objenesis:2.6" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.checkerframework:checker-compat-qual:2.0.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.google.errorprone:error_prone_annotations:2.1.3" level="project" />
+    <orderEntry type="module" module-name="api" exported="" />
+    <orderEntry type="module" module-name="api" exported="" />
+    <orderEntry type="module" module-name="api" exported="" />
+    <orderEntry type="module" module-name="generator" exported="" />
+    <orderEntry type="library" exported="" name="Gradle: javax.inject-1" level="project" />
+    <orderEntry type="library" exported="" scope="PROVIDED" name="Gradle: groovy-all-2.4.15" level="project" />
+    <orderEntry type="library" exported="" scope="PROVIDED" name="Gradle: auto-service-1.0-rc4" level="project" />
+    <orderEntry type="library" exported="" scope="PROVIDED" name="Gradle: javapoet-1.9.0" level="project" />
+    <orderEntry type="library" exported="" scope="PROVIDED" name="Gradle: auto-common-0.8" level="project" />
+    <orderEntry type="library" exported="" scope="PROVIDED" name="Gradle: guava-23.5-jre" level="project" />
+    <orderEntry type="library" exported="" scope="PROVIDED" name="Gradle: jsr305-1.3.9" level="project" />
+    <orderEntry type="library" exported="" scope="PROVIDED" name="Gradle: checker-qual-2.0.0" level="project" />
+    <orderEntry type="library" exported="" scope="PROVIDED" name="Gradle: error_prone_annotations-2.0.18" level="project" />
+    <orderEntry type="library" exported="" scope="PROVIDED" name="Gradle: j2objc-annotations-1.1" level="project" />
+    <orderEntry type="library" exported="" scope="PROVIDED" name="Gradle: animal-sniffer-annotations-1.14" level="project" />
+    <orderEntry type="library" exported="" scope="TEST" name="Gradle: junit-4.12" level="project" />
+    <orderEntry type="library" exported="" scope="TEST" name="Gradle: mockito-core-2.22.0" level="project" />
+    <orderEntry type="library" exported="" scope="TEST" name="Gradle: guava-24.0-android" level="project" />
+    <orderEntry type="library" exported="" scope="TEST" name="Gradle: hamcrest-core-1.3" level="project" />
+    <orderEntry type="library" exported="" scope="TEST" name="Gradle: byte-buddy-1.8.21" level="project" />
+    <orderEntry type="library" exported="" scope="TEST" name="Gradle: byte-buddy-agent-1.8.21" level="project" />
+    <orderEntry type="library" exported="" scope="TEST" name="Gradle: objenesis-2.6" level="project" />
+    <orderEntry type="library" exported="" scope="TEST" name="Gradle: checker-compat-qual-2.0.0" level="project" />
+    <orderEntry type="library" exported="" scope="TEST" name="Gradle: error_prone_annotations-2.1.3" level="project" />
+    <orderEntry type="library" exported="" name="example.example-0.1.0" level="project" />
+    <orderEntry type="library" exported="" name="example.example-0.1.0-javadoc" level="project" />
+    <orderEntry type="library" exported="" name="example.example-0.1.0-sources" level="project" />
+    <orderEntry type="library" exported="" name="example.example-0.1.0" level="project" />
+    <orderEntry type="library" exported="" name="example.example-0.1.0" level="project" />
+    <orderEntry type="library" exported="" name="example.example-0.1.0" level="project" />
+    <orderEntry type="library" exported="" name="example.example-0.1.0" level="project" />
+    <orderEntry type="library" exported="" name="example.example-0.1.0" level="project" />
+    <orderEntry type="library" exported="" name="example.example-0.1.0" level="project" />
+    <orderEntry type="library" exported="" name="example.example-0.1.0" level="project" />
+  </component>
+</module>

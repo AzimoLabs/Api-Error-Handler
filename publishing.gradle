@@ -1,0 +1,99 @@
+apply plugin: 'java'
+apply plugin: 'maven-publish'
+apply plugin: 'maven-publish-auth'
+apply plugin: 'net.researchgate.release'
+apply plugin: 'idea'
+apply plugin: "jacoco"
+apply plugin: 'com.jfrog.bintray'
+
+String gpgConfigPath = project.property("AZIMOLABS_GPG")
+gpgConfigPath = gpgConfigPath.replaceFirst("^~", System.getProperty("user.home"))
+if (project.hasProperty("AZIMOLABS_GPG") && new File(gpgConfigPath).exists()) {
+    apply from: gpgConfigPath
+}
+
+group = GROUP
+version = VERSION_NAME
+
+def pomConfig = {
+    licenses {
+        license {
+            name POM_LICENCE_NAME
+            url POM_LICENCE_URL
+            distribution "repo"
+        }
+    }
+    developers {
+        developer {
+            id POM_DEVELOPER_ID
+            name POM_DEVELOPER_NAME
+        }
+    }
+
+    scm {
+        url POM_SCM_URL
+        connection POM_SCM_CONNECTION
+        developerConnection POM_SCM_DEV_CONNECTION
+    }
+}
+
+publishing {
+    publications {
+        mavenJava(MavenPublication) {
+            from components.java
+            artifactId = jar.baseName
+            artifact sourcesJar
+            artifact javadocJar
+            pom.withXml {
+                def root = asNode()
+                root.appendNode('description', POM_DESCRIPTION)
+                root.appendNode('name', PROJECT_NAME)
+                root.appendNode('url', POM_URL)
+                root.children().last() + pomConfig
+            }
+        }
+    }
+}
+
+bintray {
+    // Global gradle.properties
+    user = project.hasProperty('BINTRAY_USER') ? project.getProperty('BINTRAY_USER') : ""
+    key = project.hasProperty('BINTRAY_KEY') ? project.getProperty('BINTRAY_KEY') : ""
+
+    dryRun = false
+    publish = true
+    override = false
+    configurations = ['archives']
+    pkg {
+        repo = 'maven'
+        name = PROJECT_NAME
+        desc = POM_DESCRIPTION
+        websiteUrl = POM_URL
+        vcsUrl = GIT_URL
+        licenses = ["Apache-2.0"]
+        publish = true
+        publicDownloadNumbers = true
+        version {
+            desc = POM_DESCRIPTION
+            gpg {
+                sign = true
+                passphrase = project.hasProperty('BINTRAY_GPG_PASSWORD') ? project.getProperty('BINTRAY_GPG_PASSWORD') : ""
+            }
+        }
+    }
+}
+
+task sourcesJar(type: Jar) {
+    from sourceSets.main.allJava
+    classifier 'sources'
+}
+
+task javadocJar(type: Jar) {
+    classifier = 'javadoc'
+    from javadoc.destinationDir
+}
+
+artifacts {
+    archives javadocJar
+    archives sourcesJar
+}

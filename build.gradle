@@ -1,0 +1,30 @@
+buildscript {
+    repositories {
+        google()
+        jcenter()
+        maven { url "https://plugins.gradle.org/m2/" }
+        maven { url 'https://oss.sonatype.org/content/repositories/snapshots' }
+    }
+    dependencies {
+        classpath "net.ltgt.gradle:gradle-apt-plugin:0.14"
+        classpath("org.hibernate.build.gradle:gradle-maven-publish-auth:2.0.1")
+        classpath("net.researchgate:gradle-release:2.5.0")
+        classpath 'com.github.jengelman.gradle.plugins:shadow:1.2.4'
+        classpath 'com.jfrog.bintray.gradle:gradle-bintray-plugin:1.+'
+    }
+}
+subprojects {
+
+    repositories {
+        mavenCentral()
+        maven { url "http://oss.sonatype.org/content/repositories/snapshots/" }
+    }
+
+    apply plugin: 'java'
+    apply from: "$rootProject.projectDir/publishing.gradle"
+
+    group = GROUP
+    version = VERSION_NAME
+    sourceCompatibility = 1.8
+}
+

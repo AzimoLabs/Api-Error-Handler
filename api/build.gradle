@@ -1,0 +1,6 @@
+project.ext.jarName = "api"
+
+dependencies {
+    testCompile 'junit:junit:4.12'
+    implementation 'javax.inject:javax.inject:1'
+}

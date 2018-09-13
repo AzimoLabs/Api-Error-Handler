@@ -1,0 +1,15 @@
+apply plugin: 'groovy'
+
+project.ext.jarName = "processor"
+
+dependencies {
+    compile project(':api')
+    compile "org.codehaus.groovy:groovy-all:2.4.15"
+    compile "com.google.auto.service:auto-service:1.0-rc4"
+    compile "com.squareup:javapoet:1.9.0"
+    compile 'javax.inject:javax.inject:1'
+
+    testCompile 'junit:junit:4.12'
+    testCompile 'com.google.testing.compile:compile-testing:0.15'
+    testCompile "org.spockframework:spock-core:1.1-groovy-2.4"
+}

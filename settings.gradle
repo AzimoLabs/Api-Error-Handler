@@ -1,0 +1,5 @@
+rootProject.name = 'Api-Error-Handler'
+include 'example'
+include 'generator'
+include 'api'
+
