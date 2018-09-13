@@ -1,5 +1,5 @@
 <component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="Publish to azimo's nexusdf" type="GradleRunConfiguration" factoryName="Gradle" singleton="true">
+  <configuration default="false" name="Publish to internal nexus" type="GradleRunConfiguration" factoryName="Gradle" singleton="true">
     <ExternalSystemSettings>
       <option name="executionName" />
       <option name="externalProjectPath" value="$PROJECT_DIR$" />
