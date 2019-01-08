@@ -6,7 +6,7 @@ Declarative error handling. Define expected behaviour of API and don't worry abo
 Specify interface with methods that you want called for different API error codes.
 
 ```java
-    @AutoHandler // let compiler know to analyse your class
+    @AutoHandler // let compiler know it should analyse your class
     public interface SimplerErrorListener { // your code has to implement this interface
 
         @ErrorCode("422") 
