@@ -97,7 +97,17 @@ This will generate implementation calling matching methods when specified error 
 * @ErrorLogger - if you want to report errors, you need to provide implementation of this interface. 
 * @ErrorPayload - as error responses vary, this is the minimal model you need to provide. Your error response should expose `String code()` (used by `@ErrorCode` to match errors to methods), `String requestId()` (required for crash tracking), `String message()` (developer friendly message) and `Map<String, Object> errors` that are going to be analysed for error messages for the user. 
  
-// TODO: add to your project
+## Add to your project 
+```groovy
+repositories { 
+  maven { url 'https://dl.bintray.com/azimolabs/maven' }
+}
+
+dependencies {
+  implementation 'com.azimolabs.errorhandler:api:1.4.19'
+  annotationProcessor 'com.azimolabs.errorhandler:generator:1.4.19'
+}
+```
 
 ## Example usages
 * [SimplerErrorListener - basic example, error codes without messages](example/src/main/java/com/azimolabs/errorhandler/example/SimplerErrorListener.java)
